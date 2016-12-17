@@ -15,6 +15,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showInfo (View v) {
-        CustomToast.showInfo(MainActivity.this, "Info");
+        CustomToast.showInfo(this, "Info");
+    }
+
+    public void showError (View v) {
+        CustomToast.showErro(this, "Error");
+    }
+
+    public void showWarning (View v) {
+        CustomToast.showWarning(this, "Warning");
     }
 }
